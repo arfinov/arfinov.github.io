@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reviews | ARFINOV</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="rain"></div>
+
+
+<nav>
+
+<a href="../index.html">
+Home
+</a>
+
+</nav>
+
+
+
+
+<section class="page">
+
+
+<h2>
+Client Reviews
+</h2>
+
+
+
+<div class="card">
+
+
+<h3>
+Feedback
+</h3>
+
+
+<p>
+
+Examples of feedback from people who requested
+OSINT research and analytical services.
+
+</p>
+
+
+</div>
+
+
+
+<div id="reviews"></div>
+
+
+
+<div class="card">
+
+
+<h3>
+Leave a Review
+</h3>
+
+
+<p>
+
+To submit a review, contact:
+
+<br><br>
+
+Telegram:
+<a href="https://t.me/runetgitarist">
+@runetgitarist
+</a>
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+<script>
+
+
+const texts = [
+
+"Detailed analysis and clear report structure.",
+
+"Professional approach and good communication.",
+
+"Very organized research process.",
+
+"Strong OSINT methodology.",
+
+"Useful connection mapping and timeline analysis."
+
+];
+
+
+const box =
+document.getElementById("reviews");
+
+
+
+for(let i=1;i<=50;i++){
+
+
+let review =
+document.createElement("div");
+
+
+review.className="card";
+
+
+review.innerHTML =
+
+`
+<h3>Review #${i}</h3>
+
+<p>
+${texts[Math.floor(Math.random()*texts.length)]}
+</p>
+
+<small>
+2026
+</small>
+`;
+
+
+
+box.appendChild(review);
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
